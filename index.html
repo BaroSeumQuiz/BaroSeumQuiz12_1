@@ -61,7 +61,9 @@
 </p>
 <form name="form11" style="margin-left:20px">
   <font size=6px; >
- <input type="text" name="quiz11" value=""><br>
+  <label><input type="radio" name="quiz11" value="v1"> 29</label></br>
+  <label><input type="radio" name="quiz11" value="v2"> 30</label><br>
+  <label><input type="radio" name="quiz11" value="v3"> 31</label><br>
  </font>
  <div id="checktrue11" style="margin:0px 0 0 0px; display:none;" >
    <img src="/BaroSeumQuiz12_1/images/checktrue.png"/>
@@ -358,7 +360,7 @@
   function myFucntion11() {
 
    checkresult_set(11)
-   if(form11.quiz11.value=="30"){
+    if(form11.quiz11[1].checked==true){
 
   checkresult_true(11);
    }else{
