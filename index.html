@@ -182,7 +182,9 @@
 </p>
 <form name="form15" style="margin-left:20px">
   <font size=6px; >
- <input type="text" name="quiz15" value=""><br>
+  <label><input type="radio" name="quiz15" value="v1"> 100</label></br>
+  <label><input type="radio" name="quiz15" value="v2"> 20</label><br>
+  <label><input type="radio" name="quiz15" value="v3"> 10</label><br>
  </font>
  <div id="checktrue15" style="margin:0px 0 0 0px; display:none;" >
    <img src="/BaroSeumQuiz12_1/images/checktrue.png"/>
@@ -326,11 +328,13 @@
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
   <img style="margin-left:20px" src="/BaroSeumQuiz12_1/images/quiz10.PNG" />
 <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
-  Q10. <br>[보기] 중 곱셈식이 잘못된 것의 기호를 써넣으세요.<br>(2개 이상일 경우 쉼표,띄어쓰기없이 기호만 써넣으세요)
+  Q10. <br>[보기] 중 곱셈식이 잘못된 것의 기호를 써넣으세요.
 </p>
 <form name="form20" style="margin-left:20px">
   <font size=6px; >
- <input type="text" name="quiz20" value=""><br>
+  <label><input type="radio" name="quiz15" value="v1"> ㄴ,ㄷ</label></br>
+  <label><input type="radio" name="quiz15" value="v2"> ㄴ,ㄹ</label><br>
+  <label><input type="radio" name="quiz15" value="v3"> ㄱ,ㄴ</label><br>
  </font>
  <div id="checktrue20" style="margin:0px 0 0 0px; display:none;" >
    <img src="/BaroSeumQuiz12_1/images/checktrue.png"/>
@@ -404,7 +408,7 @@
 
   function myFucntion15() {
    checkresult_set(15)
-   if(form15.quiz15.value=="10"){
+   if(form15.quiz15[2].checked==true){
 
   checkresult_true(15);
    }else{
@@ -458,7 +462,7 @@
 
   function myFucntion20() {
    checkresult_set(20)
-   if(form20.quiz20.value=="ㄴㄷ"){
+   if(form20.quiz20[0].checked==true){
 
   checkresult_true(20);
    }else{
