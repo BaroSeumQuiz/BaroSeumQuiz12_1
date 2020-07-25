@@ -486,7 +486,6 @@
 <!--다음페이지-->
 <img id="nextq24" style="display:inline;" src="/BaroSeumQuiz12_1/images/wrongcheckbtn.png" onclick="gonext(this)"/>
 <img id="wrongnextq24" style="display:none;" src="/BaroSeumQuiz12_1/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
-
 </div>
 </div>
 </div>
@@ -494,7 +493,7 @@
 <!--주관식 문제소개15-->
  <div id="cho25" style="display:none;" >
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
-  <img style="margin-left:20px" src="/BaroSeumQuiz12_1/images/quiz15.png" />
+  <img style="margin-left:20px" src="/BaroSeumQuiz12_1/images/quiz15.PNG" />
 <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
   Q15. <br>설명에 맞는 도형이 무엇인지 고르세요.
 </p>
@@ -672,7 +671,7 @@
   }
 
   function myFucntion24() {
-   checkresult_set(24)
+   checkresult_set(24);
    if(form24.quiz24[1].checked==true){
 
   checkresult_true(24);
@@ -680,10 +679,11 @@
      wrongcheckcnt[13] = 1;
      checkresult_flase(24);
    }
+
   }
 
   function myFucntion25() {
-   checkresult_set(25)
+   checkresult_set(25);
    if(form25.quiz25[1].checked==true){
 
   checkresult_true(25);
